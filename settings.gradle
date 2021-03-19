@@ -1,0 +1,13 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+
+        maven { url "https://dl.bintray.com/arrow-kt/arrow-kt/" }
+        maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local/" } // for SNAPSHOT builds
+    }
+}
+rootProject.name = "composeTest"
+include ':app'
